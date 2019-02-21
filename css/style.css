@@ -1,3 +1,92 @@
-.ht-list{
-    color: red;
+/*универсальный селектор*/
+* {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  width: 900px;
+  margin: auto;
+  padding: 60px;
+}
+.list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 60px;
+}
+.list-item {
+  display: inline-block;
+}
+.list-link {
+  /* display: block;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  color: #444;
+  width: 150px;
+  padding: 0 15px; */
+  /* width: 113px; */
+  height: 42px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #626262;
+  font-family: "Playfair Display";
+  font-weight: 400;
+  text-align: center;
+}
+.list-link:hover {
+  color: blue;
+}
+main {
+  font-size: 0;
+}
+.card {
+  font-size: 16px;
+  display: inline-block;
+  width: calc(50% - 30px);
+}
+.card_mr {
+  margin-right: 60px;
+}
+.card-img-wrp {
+  margin-bottom: 30px;
+}
+.card-title {
+  font-size: 30px;
+  color: #626262;
+  font-family: "Playfair Display";
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+.card-subtitle {
+  font-size: 14px;
+  color: #b4ad9e;
+  font-family: "Ubuntu Light";
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+.card-description {
+  font-size: 14px;
+  line-height: 24px;
+  color: #626262;
+  font-family: "Playfair Display";
+  font-weight: 400;
+  margin-bottom: 130px;
+}
+footer {
+  text-align: center;
+}
+.load-btn {
+  font-size: 20px;
+  line-height: 24px;
+  color: #626262;
+  font-family: "Playfair Display";
+  font-weight: 400;
+  width: 164px;
+  height: 60px;
+  background-color: #ddddd7;
+  border: 1px solid #626262;
 }

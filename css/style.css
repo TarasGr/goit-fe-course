@@ -10,8 +10,8 @@
 }
 .list {
   list-style: none;
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
   margin-left: 150px;
   margin-right: 150px;
   margin-bottom: 60px;
@@ -26,19 +26,20 @@
   text-transform: uppercase;
   font-family: sans-serif;
   color: #444;
-  width: 150px;
-  padding: 0 15px; */
-  /* width: 113px; */
+  width: 150px; */
+  padding: 0 40px;
   height: 42px;
   font-size: 14px;
   line-height: 24px;
   color: #626262;
-  font-family: "Playfair Display";
+  font-family: "Playfair Display", serif;
   font-weight: 400;
   text-align: center;
+  text-decoration: none;
 }
 .list-link:hover {
   color: blue;
+  text-decoration: underline;
 }
 main {
   font-size: 0;
@@ -57,14 +58,14 @@ main {
 .card-title {
   font-size: 30px;
   color: #626262;
-  font-family: "Playfair Display";
+  font-family: "Playfair Display", serif;
   font-weight: 400;
   margin-bottom: 40px;
 }
 .card-subtitle {
   font-size: 14px;
   color: #b4ad9e;
-  font-family: "Ubuntu Light";
+  font-family: "Ubuntu Light", serif;
   font-weight: 300;
   margin-bottom: 30px;
 }
@@ -72,7 +73,7 @@ main {
   font-size: 14px;
   line-height: 24px;
   color: #626262;
-  font-family: "Playfair Display";
+  font-family: "Playfair Display", serif;
   font-weight: 400;
   margin-bottom: 130px;
 }
@@ -83,10 +84,11 @@ footer {
   font-size: 20px;
   line-height: 24px;
   color: #626262;
-  font-family: "Playfair Display";
+  font-family: "Playfair Display", serif;
   font-weight: 400;
   width: 164px;
   height: 60px;
   background-color: #ddddd7;
   border: 1px solid #626262;
+  cursor: pointer;
 }

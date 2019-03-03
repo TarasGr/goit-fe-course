@@ -9,12 +9,16 @@ html {
 /* Совет от Александра Репеты, но у меня все картинки на странице занимают ширину врапера */
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 /* убираю переносы строк и прочие зазоры между елементами */
 header {
-  font-size: 0;
   padding: 0 15px;
 }
 main {
@@ -24,37 +28,26 @@ main {
   width: 1170px;
   margin: 0 auto;
   padding: 15px;
-  /* font-size: 0;  */
-
-  /* background: powderblue; */
 }
 .site-logo {
-  /* display: inline-block; */
-  vertical-align: middle;
   float: left;
 }
 .site-navigation {
-  /* display: inline-block; */
-  vertical-align: middle;
   margin: 0;
   padding: 0;
   font-size: 14px;
   list-style: none;
-  font-weight: 700;
-
-  /* width: 1032px; */
-  /* background: palegoldenrod; */
-  /* text-align: right; */
-  /* float: right; */
+  float: right;
+  /* Для выравнивания по центру с логотипом */
+  margin-top: 4px;
 }
 .site-navigation-item {
-  /* display: inline-block; */
-  padding: 15px;
-  float: right;
+  line-height: 22px;
+  float: left;
 }
 /* Неудобно каждый раз определять какой дочерний елемент будет без паддинга */
-.site-navigation-item:first-child {
-  padding-right: 0;
+.site-navigation-item:not(:last-child) {
+  padding-right: 30px;
 }
 .site-navigation-link {
   text-transform: uppercase;
@@ -68,8 +61,7 @@ main {
 .title {
   font-size: 48px;
   color: #515151;
-  /* font-family: "Roboto", sans-serif; */
-  font-weight: 900px;
+  font-weight: 900;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 75px;
@@ -83,14 +75,11 @@ main {
   display: block;
 }
 .features {
-  /* margin: 0;
-    padding: 0; */
   margin-bottom: 72px;
 }
 .card {
   width: 255px;
   height: 320px;
-  /* display: inline-block; */
   margin: 15px;
   cursor: pointer;
   float: left;
@@ -100,8 +89,6 @@ main {
   overflow: hidden;
 }
 .card-text-wrp {
-  /* width: 255px;
-  height: 40px; */
   height: calc(320px - 280px);
   background: #323232;
   overflow: hidden;
@@ -116,16 +103,11 @@ main {
 }
 .card-title {
   padding-left: 14px;
-
-  /* width: 195px;
-  display: inline-block; */
   float: left;
 }
 .card-price {
   padding: 0px 12px;
   background: #8c8c8c;
-
-  /* display: inline-block; */
   float: right;
 }
 .card:hover .card-text-wrp {
@@ -135,12 +117,6 @@ main {
   background: #1abc9c;
 }
 
-.clearfix {
-    content: "";
-    display: block;
-    clear: both;
-}
-
 .news {
   margin: 0;
   padding: 0;
@@ -148,7 +124,6 @@ main {
 }
 .card-news {
   width: 350px;
-  /* display: inline-block; */
   cursor: pointer;
   margin: 15px;
   float: left;

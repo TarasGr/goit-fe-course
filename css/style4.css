@@ -1,0 +1,198 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+/* Совет от Александра Репеты, но у меня все картинки на странице занимают ширину врапера */
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* убираю переносы строк и прочие зазоры между елементами */
+header {
+  font-size: 0;
+  padding: 0 15px;
+}
+main {
+  font-size: 0;
+}
+.wrapper {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 15px;
+  /* font-size: 0;  */
+
+  /* background: powderblue; */
+}
+.site-logo {
+  /* display: inline-block; */
+  vertical-align: middle;
+  float: left;
+}
+.site-navigation {
+  /* display: inline-block; */
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  list-style: none;
+  font-weight: 700;
+
+  /* width: 1032px; */
+  /* background: palegoldenrod; */
+  /* text-align: right; */
+  /* float: right; */
+}
+.site-navigation-item {
+  /* display: inline-block; */
+  padding: 15px;
+  float: right;
+}
+/* Неудобно каждый раз определять какой дочерний елемент будет без паддинга */
+.site-navigation-item:first-child {
+  padding-right: 0;
+}
+.site-navigation-link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+}
+.site-navigation-link:hover,
+.site-navigation-link:focus {
+  color: #1abc9c;
+}
+.title {
+  font-size: 48px;
+  color: #515151;
+  /* font-family: "Roboto", sans-serif; */
+  font-weight: 900px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 75px;
+}
+.title::after {
+  content: "";
+  width: 164px;
+  height: 7px;
+  background-color: #1abc9c;
+  margin: 20px auto;
+  display: block;
+}
+.features {
+  /* margin: 0;
+    padding: 0; */
+  margin-bottom: 72px;
+}
+.card {
+  width: 255px;
+  height: 320px;
+  /* display: inline-block; */
+  margin: 15px;
+  cursor: pointer;
+  float: left;
+}
+.card-img-wrp {
+  height: 280px;
+  overflow: hidden;
+}
+.card-text-wrp {
+  /* width: 255px;
+  height: 40px; */
+  height: calc(320px - 280px);
+  background: #323232;
+  overflow: hidden;
+  color: #fff;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+.card-title,
+.card-price {
+  line-height: calc(320px - 280px);
+}
+.card-title {
+  padding-left: 14px;
+
+  /* width: 195px;
+  display: inline-block; */
+  float: left;
+}
+.card-price {
+  padding: 0px 12px;
+  background: #8c8c8c;
+
+  /* display: inline-block; */
+  float: right;
+}
+.card:hover .card-text-wrp {
+  background: #1abc9c;
+}
+.card:hover .card-price {
+  background: #1abc9c;
+}
+
+.clearfix {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.news {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+.card-news {
+  width: 350px;
+  /* display: inline-block; */
+  cursor: pointer;
+  margin: 15px;
+  float: left;
+}
+.card-news-img-wrp {
+  height: 260px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.card-news-subtitle {
+  font-size: 18px;
+  line-height: 26px;
+  color: #555252;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  margin: 0;
+}
+.card-news-subtitle::after {
+  content: "";
+  width: 136px;
+  height: 3px;
+  background-color: #4ec6ab;
+  margin: 8px 214px 0px 0px;
+  display: block;
+}
+.card-news-description {
+  font-size: 14px;
+  line-height: 26px;
+  color: #555252;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+.read-more-btn {
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  cursor: pointer;
+
+  width: 159px;
+  height: 51px;
+  border-radius: 3px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.39);
+  background-color: #4ec6ab;
+}

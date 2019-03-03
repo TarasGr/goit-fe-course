@@ -3,6 +3,31 @@
   margin: 0;
   padding: 0;
 }
+/* Starting page */
+.main-title {
+  width: 100%;
+  text-align: center;
+  /* margin-bottom: 30px; */
+  padding: 30px;
+}
+.wrapper-main {
+  text-align: center;
+}
+.ht-list {
+  list-style: none;
+  padding: 20px;
+}
+.ht-list-item {
+  padding: 10px;
+}
+.ht-list-link {
+  font-size: 25px;
+  text-decoration: none;
+}
+.ht-list-link:hover {
+  color: palevioletred;
+}
+/* HT 1-2 */
 .wrapper {
   width: 900px;
   margin: auto;
@@ -37,9 +62,9 @@
   text-align: center;
   text-decoration: none;
 }
-.list-link:hover {
+.list-link:hover,
+.list-link:focus {
   color: blue;
-  text-decoration: underline;
 }
 main {
   font-size: 0;

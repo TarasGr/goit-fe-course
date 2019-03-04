@@ -123,7 +123,7 @@ main {
   background: #1abc9c;
 }
 .card:hover .card-price {
-  background: #1abc9c;
+  background: #7fd9c7;
 }
 
 .news {
@@ -179,4 +179,5 @@ main {
   border-radius: 3px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.39);
   background-color: #4ec6ab;
+  border: none;
 }

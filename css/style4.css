@@ -19,7 +19,16 @@ img {
 }
 /* убираю переносы строк и прочие зазоры между елементами */
 header {
+  height: 22px;
   padding: 0 15px;
+}
+.logo {
+  height: 22px;
+  float: left;
+}
+nav {
+  height: 22px;
+  float: right;
 }
 main {
   font-size: 0;
@@ -42,7 +51,7 @@ main {
   margin-top: 4px;
 }
 .site-navigation-item {
-  line-height: 22px;
+  /* line-height: 22px; */
   float: left;
 }
 /* Неудобно каждый раз определять какой дочерний елемент будет без паддинга */

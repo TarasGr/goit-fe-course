@@ -1,0 +1,131 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+.wrapper {
+  margin: 0px;
+  padding: 0px;
+}
+/* Task 1 */
+.card {
+  position: relative;
+}
+.card-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+/* Tatk 2 */
+.parent {
+  position: relative;
+  background: #424242;
+  width: 400px;
+  height: 400px;
+}
+.child {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+.child:nth-child(1) {
+  background: #2ea2f3;
+}
+.child:nth-child(2) {
+  right: 50%;
+  transform: translateX(50%);
+  background: #199586;
+}
+.child:nth-child(3) {
+  right: 0%;
+  background: #e62365;
+}
+.child:nth-child(4) {
+  top: 50%;
+  transform: translateY(-50%);
+  background: #f1483d;
+}
+.child:nth-child(5) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fc5b2d;
+}
+.child:nth-child(6) {
+  right: 0%;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #9b12ae;
+}
+.child:nth-child(7) {
+  bottom: 0%;
+  background: #4db051;
+}
+.child:nth-child(8) {
+  bottom: 0%;
+  right: 50%;
+  transform: translateX(50%);
+  background: #fcef41;
+}
+.child:nth-child(9) {
+  bottom: 0%;
+  right: 0%;
+  background: #398ef2;
+}
+/* Task 3 */
+ul {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  list-style: none;
+}
+.menu-wrp {
+  min-height: 100vh;
+  background-image: linear-gradient(#24c6dc, #514a9d);
+  font-family: Roboto, sans-serif;
+}
+.menu-item {
+  float: left;
+  /* padding: 0px 60px; */
+  position: relative;
+  /*  box-shadow: 0.1px 0.1px 0.1px 1px red;*/
+}
+
+.menu-link {
+  padding: 0px 50px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+}
+.menu-item:hover > .submenu {
+  display: block;
+}
+.menu-link:hover,
+.menu-link:focus {
+  box-shadow: 0.1px 0.1px 0.1px 1px red;
+  /* color: #1abc9c; */
+  color: #f1483d
+}
+.submenu {
+  left: 0px;
+  display: none;
+  position: absolute;
+  list-style: none;
+}
+.submenu-link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+}
+.submenu-item {
+  padding: 10px;
+  /*  box-shadow: 0.1px 0.1px 0.1px 1px blue;*/
+}
+.submenu-link:hover,
+.submenu-link:focus {
+  color: #7fff00;
+}

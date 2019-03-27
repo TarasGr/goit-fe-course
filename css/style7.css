@@ -1,0 +1,161 @@
+/*Droid serif italic*/
+@font-face {
+  font-family: "Droid Serif";
+  font-style: italic;
+  font-weight: 400;
+  src: url("./fonts/DroidSerif-Italic-webfont.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-slab-regular - latin */
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto Slab Regular"), local("RobotoSlab-Regular"),
+    url("./fonts/roboto-slab-v8-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("./fonts/roboto-slab-v8-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("./fonts/montserrat-v12-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("./fonts/montserrat-v12-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("./fonts/montserrat-v12-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("./fonts/montserrat-v12-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-color: #fed136;
+  --radius: 74px;
+  --font-m: "Montserrat", sans-serif;
+  --font-d: "Droid Serif", serif;
+  --font-r: "Roboto Slab", serif;
+}
+
+.container {
+  width: 940px;
+  margin: auto;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  align-items: baseline;
+  margin-bottom: 100px;
+}
+.logo-wrp {
+  width: 90px;;
+}
+.site-navigation {
+  width: 485px;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  /* align-items: baseline; */
+}
+.site_navigation-item {
+  /* margin: 0 20px; */
+}
+.site-navigation-link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #222222;
+  font-size: 14px;
+  font-family: var(--font-m);
+}
+.site-navigation-link:hover {
+  color: var(--main-color);
+}
+
+/* .site-navigation {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+
+  font-family: var(--mont);
+  font-weight: 700;
+} */
+
+
+
+
+
+
+
+
+
+
+/* Title */
+.title {
+  font-size: 40px;
+  font-family: var(--font-m);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+.black {
+  color: #222;
+}
+.white {
+  color: #fff;
+}
+.subtitle {
+  font-size: 16px;
+  font-family: var(--font-d);
+  font-style: italic;
+  text-align: center;
+  color: #777;
+}
+/* Services */
+.sirveces-wrp {
+  display: flex;
+  justify-content: space-between;
+}
+
+.background-img {
+  background-color: #222;
+  background-image: (url("../hm-7/img/map.png"));
+}
+
+input[type="email"]:focus:invalid,
+textarea[name="body"]:focus:invalid,
+input[name="name"]:focus:invalid {
+  outline-color: red;
+  transition: outline-color 5s;
+}
+
+input[type="email"]:focus:valid,
+textarea[name="body"]:focus:valid,
+input[name="name"]:focus:valid {
+  outline-color: green;
+  transition: outline-color 0.4s;
+}
+.contact-input,
+.contact-textarea {
+  box-sizing: border-box;
+  margin: 14px 0;
+  width: 455px;
+  display: block;
+  outline: 4px solid transparent;
+  outline-offset: -2px;
+  transition: outline-color 0.1s;
+}

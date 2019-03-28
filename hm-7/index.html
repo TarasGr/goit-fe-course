@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="../css/style7.css" />
   </head>
   <body>
-    <div>
-      <header class="container">
+    <div class="container">
+      <header>
         <div class="logo-wrp">
           <a href="#" class="logo-link">
             <img src="./img/logo.png" alt="logo" class="logo" />
@@ -35,103 +35,113 @@
           </ul>
         </nav>
       </header>
-      <main>
-        <section class="services container">
-          <h2 class="title black">services</h2>
-          <h4 class="subtitle">Point iaculis purus consequant sem cure.</h4>
-          <div class="sirveces-wrp">
-            <div class="service">
-              <div class="icon-wrp">
-                <img
-                  src="./img/icon-basket.png"
-                  alt="backet"
-                  class="service-img"
-                />
-                <div class="service-text">
-                  <h4 class="sirvece-title">E-Commerce</h4>
-                  <p class="service-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Accusamus asperiores totam eius recusandae commodi odio quas
-                    minima cupiditate.
-                  </p>
-                </div>
-              </div>
+    </div>
+    <main>
+      <section class="services container">
+        <h2 class="title title--service">services</h2>
+        <h4 class="subtitle subtitle--service">
+          Point iaculis purus consequant sem cure.
+        </h4>
+        <div class="services-wrp">
+          <div class="service">
+            <div class="icon-wrp">
+              <img
+                src="./img/icon-basket.png"
+                alt="backet"
+                class="service-img"
+                width="40px"
+                height="40px"
+              />
             </div>
-            <div class="service">
-              <div class="icon-wrp">
-                <img
-                  src="./img/icon-laptop.png"
-                  alt="laptop"
-                  class="service-img"
-                />
-                <div class="service-text">
-                  <h4 class="sirvece-title">Responsive Web</h4>
-                  <p class="service-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dolorem, mollitia facere? Mollitia, praesentium. Veritatis
-                    ea commodi officia laudantium!
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="service">
-              <div class="icon-wrp">
-                <img
-                  src="./img/icon-locked.png"
-                  alt="locket"
-                  class="service-img"
-                />
-                <div class="service-text">
-                  <h4 class="sirvece-title">Web Security</h4>
-                  <p class="service-description">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Suscipit, provident adipisci. Earum molestiae at
-                    repellendus. Dolor, illum saepe.
-                  </p>
-                </div>
-              </div>
+            <div class="service-text">
+              <h4 class="service-title">E-Commerce</h4>
+              <p class="service-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus asperiores totam eius recusandae commodi odio quas
+                minima cupiditate.
+              </p>
             </div>
           </div>
+          <div class="service">
+            <div class="icon-wrp">
+              <img
+                src="./img/icon-laptop.png"
+                alt="laptop"
+                class="service-img"
+                width="40px"
+                height="40px"
+              />
+            </div>
+            <div class="service-text">
+              <h4 class="service-title">Responsive Web</h4>
+              <p class="service-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dolorem, mollitia facere? Mollitia, praesentium. Veritatis ea
+                commodi officia laudantium!
+              </p>
+            </div>
+          </div>
+          <div class="service">
+            <div class="icon-wrp">
+              <img
+                src="./img/icon-locked.png"
+                alt="locket"
+                class="service-img"
+                width="40px"
+                height="40px"
+              />
+            </div>
+            <div class="service-text">
+              <h4 class="service-title">Web Security</h4>
+              <p class="service-description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Suscipit, provident adipisci. Earum molestiae at repellendus.
+                Dolor, illum saepe.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container-fluid">
+        <section class="contact-us container">
+          <h2 class="title white">services</h2>
+          <h4 class="subtitle subtitle--contact">
+            Point iaculis purus consequant sem cure.
+          </h4>
+          <form action="#" class="contact-form" id="contact-form" method="POST">
+            <div class="contact-form-wrp">
+              <div class="contact-inputs">
+                <input
+                  class="contact-input"
+                  type="text"
+                  name="name"
+                  placeholder="your name *"
+                  required
+                />
+                <input class="contact-input" type="email" name="email"
+                placeholder="your email *" required">
+                <input
+                  class="contact-input"
+                  type="text"
+                  name="subject"
+                  placeholder="subject"
+                />
+              </div>
+              <div class="contact-textarea-wrp">
+                <textarea
+                  class="contact-textarea"
+                  name="body"
+                  cols="30"
+                  rows="10"
+                  placeholder="Your Message *"
+                  required
+                ></textarea>
+              </div>
+            </div>
+            <button class="contact-submit" type="submit">send message</button>
+          </form>
         </section>
-      </main>
-    </div>
-    <div class="container-fluid">
-      <footer class="contact-us container">
-        <h2 class="title white">services</h2>
-        <h4 class="subtitle">Point iaculis purus consequant sem cure.</h4>
-        <form action="#" class="contact-form" id="contact-form" method="POST">
-          <div class="contact-form-wrp">
-            <div class="contact-inputs">
-              <input
-                class="contact-input"
-                type="text"
-                name="name"
-                placeholder="your name *"
-                required
-              />
-              <input class="contact-input" type="email" name="email"
-              placeholder="your email *" required">
-              <input
-                class="contact-input"
-                type="text"
-                name="subject"
-                placeholder="subject"
-              />
-            </div>
-            <div class="contact-textarea-wrp">
-              <textarea
-                class="contact-textarea"
-                name="body"
-                cols="30"
-                rows="10"
-                placeholder="Your Message *"
-                required
-              ></textarea>
-            </div>
-          </div>
-          <button class="contact-submit" type="submit">send message</button>
-        </form>
-      </footer>
-    </div>
+      </div>
+    </main>
   </body>
 </html>

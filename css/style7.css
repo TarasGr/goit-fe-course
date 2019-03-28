@@ -35,12 +35,10 @@
     /* Chrome 26+, Opera 23+, Firefox 39+ */
       url("./fonts/montserrat-v12-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-
 * {
   margin: 0;
   padding: 0;
 }
-
 :root {
   --main-color: #fed136;
   --radius: 74px;
@@ -48,29 +46,29 @@
   --font-d: "Droid Serif", serif;
   --font-r: "Roboto Slab", serif;
 }
-
 .container {
   width: 940px;
   margin: auto;
 }
-
 /* HEADER */
 header {
   display: flex;
   justify-content: space-between;
   padding-top: 50px;
-  align-items: baseline;
+  /*  align-items: baseline;*/
   margin-bottom: 100px;
 }
 .logo-wrp {
-  width: 90px;;
+  width: 90px;
+  height: 32px;
 }
 .site-navigation {
   width: 485px;
+  height: 32px;
   list-style: none;
   display: flex;
-  justify-content: flex-end;
-  /* align-items: baseline; */
+  justify-content: space-between;
+  align-items: center;
 }
 .site_navigation-item {
   /* margin: 0 20px; */
@@ -85,25 +83,6 @@ header {
 .site-navigation-link:hover {
   color: var(--main-color);
 }
-
-/* .site-navigation {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-
-  font-family: var(--mont);
-  font-weight: 700;
-} */
-
-
-
-
-
-
-
-
-
-
 /* Title */
 .title {
   font-size: 40px;
@@ -111,6 +90,7 @@ header {
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 15px;
 }
 .black {
   color: #222;
@@ -124,25 +104,46 @@ header {
   font-style: italic;
   text-align: center;
   color: #777;
+  margin-bottom: 70px;
 }
 /* Services */
-.sirveces-wrp {
+.services-wrp {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 115px;
 }
-
-.background-img {
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icon-wrp {
+  border: 3px solid #fed136;
+  border-radius: var(--radius);
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.service-text {
+  text-align: center;
+}
+.service-title {
+  margin-bottom: 20px;
+}
+/* CONTACT FORM*/
+.container-fluid {
+  background-image: url(../hm-7/img/map.png);
   background-color: #222;
-  background-image: (url("../hm-7/img/map.png"));
 }
-
+.contact-us {
+  padding: 70px 0;
+}
+/* This is from Gennadiy*/
 input[type="email"]:focus:invalid,
 textarea[name="body"]:focus:invalid,
 input[name="name"]:focus:invalid {
   outline-color: red;
   transition: outline-color 5s;
 }
-
 input[type="email"]:focus:valid,
 textarea[name="body"]:focus:valid,
 input[name="name"]:focus:valid {
@@ -158,4 +159,54 @@ input[name="name"]:focus:valid {
   outline: 4px solid transparent;
   outline-offset: -2px;
   transition: outline-color 0.1s;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-form-wrp {
+  display: flex;
+  justify-content: space-between;
+}
+.contact-inputs {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  margin-bottom: 18px;
+}
+.contact-input {
+  height: 50px;
+  border-radius: 2px;
+
+  font-size: 14px;
+  font-family: var(--font-m);
+  font-weight: 700;
+  padding: 20px;
+}
+.contact-textarea {
+  width: 455px;
+  height: 209px;
+
+  font-size: 14px;
+  font-family: var(--font-m);
+  font-weight: 700;
+  padding: 20px;
+}
+.contact-submit {
+  text-transform: uppercase;
+  margin: 0 auto;
+  background-color: transparent;
+  cursor: pointer;
+  width: 240px;
+  height: 65px;
+  border-radius: 3px;
+
+  font-size: 18px;
+  color: #ffffff;
+  font-family: var(----font-m);
+  font-weight: 700;
+}
+.contact-submit:hover {
+  background-color: #fed136;
 }

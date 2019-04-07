@@ -1,0 +1,133 @@
+@media (max-width: 747px) {
+  .container-fluid--header {
+    height: 540px;
+    background-image: url(../img/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 65px;
+  }
+  .container {
+    width: 320px;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+  .container--header {
+    padding-top: 20px;
+  }
+  .container--main {
+    margin-bottom: 57px;
+  }
+  .logo-wrp {
+    margin-bottom: 14px;
+  }
+  .site-navigation {
+    margin-bottom: 112px;
+  }
+  .logo-wrp {
+    text-align: center;
+  }
+  .title-share {
+    margin-bottom: 6px;
+  }
+  .subtitle-share {
+    margin: 0 24px;
+    margin-bottom: 14px;
+  }
+
+  .title-partner {
+    margin-bottom: 10px;
+  }
+
+  .partner {
+    margin-bottom: 25px;
+  }
+  .partner-name {
+    margin-bottom: 15px;
+  }
+  .partner-description {
+    margin: 0 35px;
+  }
+}
+@media (min-width: 748px) {
+  .container-fluid--header {
+    height: 700px;
+    background-image: url(../img/header-bg@tablet.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 65px;
+  }
+  .container {
+    width: 748px;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+  .container--header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 44px;
+    margin-bottom: 150px;
+  }
+  .container--main {
+    max-width: 492px;
+    margin-bottom: 42px;
+  }
+  nav {
+    order: 2;
+  }
+  .logo-wrp {
+    order: 1;
+  }
+  .title-share {
+    margin-bottom: 40px;
+  }
+  .subtitle-share {
+    /* margin: 0 24px; */
+    margin-bottom: 34px;
+  }
+  .btn-wrp {
+    text-align: center;
+  }
+  .title-partner {
+    margin-bottom: 30px;
+  }
+  .partners {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .partner {
+    max-width: 236px;
+    margin-bottom: 35px;
+  }
+}
+@media (min-width: 940px) {
+  .container-fluid--header {
+    background-image: url(../img/header-bg@desktop.jpg);
+  }
+  .container {
+    width: 940px;
+  }
+  .container--main {
+    max-width: 940px;
+    margin-bottom: 70px;
+  }
+  .partner {
+    max-width: 220px;
+    margin-bottom: 35px;
+  }
+  .partner:nth-child(1) {
+    order: 1
+  }
+  .partner:nth-child(2) {
+    order: 3
+  }
+  .partner:nth-child(3) {
+    order: 2
+  }
+  .partner:nth-child(4) {
+    order: 4
+  }
+}

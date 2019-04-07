@@ -3,7 +3,7 @@
   font-family: "Droid Serif";
   font-style: italic;
   font-weight: 400;
-  src: url("./fonts/DroidSerif-Italic-webfont.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url("../hm-7/fonts/DroidSerif-Italic-webfont.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* roboto-slab-regular - latin */
 @font-face {
@@ -13,7 +13,7 @@
   src: local("Roboto Slab Regular"), local("RobotoSlab-Regular"),
     url("./fonts/roboto-slab-v8-latin-regular.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("./fonts/roboto-slab-v8-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url("../hm-7/fonts/roboto-slab-v8-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* montserrat-regular - latin */
 @font-face {
@@ -23,7 +23,7 @@
   src: local("Montserrat Regular"), local("Montserrat-Regular"),
     url("./fonts/montserrat-v12-latin-regular.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("./fonts/montserrat-v12-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url("../hm-7/fonts/montserrat-v12-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* montserrat-700 - latin */
 @font-face {
@@ -33,7 +33,7 @@
   src: local("Montserrat Bold"), local("Montserrat-Bold"),
     url("./fonts/montserrat-v12-latin-700.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("./fonts/montserrat-v12-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url("../hm-7/fonts/montserrat-v12-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 * {
   margin: 0;
@@ -122,6 +122,8 @@ header {
   border-radius: var(--radius);
   padding: 10px;
   margin-bottom: 20px;
+
+  cursor: pointer;
 }
 .service-text {
   text-align: center;
@@ -133,6 +135,8 @@ header {
 .container-fluid {
   background-image: url(../hm-7/img/map.png);
   background-color: #222;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 .contact-us {
   padding: 70px 0;
@@ -196,17 +200,18 @@ input[name="name"]:focus:valid {
 .contact-submit {
   text-transform: uppercase;
   margin: 0 auto;
-  background-color: transparent;
+  background-color: #fed136;
   cursor: pointer;
   width: 240px;
   height: 65px;
   border-radius: 3px;
+  border: none;
 
   font-size: 18px;
   color: #ffffff;
-  font-family: var(----font-m);
+  font-family: var(--font-m);
   font-weight: 700;
 }
 .contact-submit:hover {
-  background-color: #fed136;
+  background-color: #33FFCC
 }

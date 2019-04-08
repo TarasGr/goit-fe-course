@@ -139,8 +139,6 @@ img {
 .button--red {
   color: var(--white);
   background-color: var(--c-accent);
-  width: 280px;
-  height: 40px;
 }
 .button--white {
   color: var(--c-accent);
@@ -148,8 +146,6 @@ img {
   border-width: 2px;
   border-color: var(--c-accent);
   background-color: var(--white);
-  width: 284px;
-  height: 44px;
 }
 .button--red:hover {
   border: 2px solid var(--c-accent);

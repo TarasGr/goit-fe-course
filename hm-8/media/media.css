@@ -34,7 +34,14 @@
     margin: 0 24px;
     margin-bottom: 14px;
   }
-
+  .button--red {
+    width: 280px;
+    height: 40px;
+  }
+  .button--white {
+    width: 284px;
+    height: 44px;
+  }
   .title-partner {
     margin-bottom: 10px;
   }
@@ -90,6 +97,14 @@
   .btn-wrp {
     text-align: center;
   }
+  .button--red {
+    width: 220px;
+    height: 40px;
+  }
+  .button--white {
+    width: 224px;
+    height: 44px;
+  }
   .title-partner {
     margin-bottom: 30px;
   }
@@ -119,15 +134,15 @@
     margin-bottom: 35px;
   }
   .partner:nth-child(1) {
-    order: 1
+    order: 1;
   }
   .partner:nth-child(2) {
-    order: 3
+    order: 3;
   }
   .partner:nth-child(3) {
-    order: 2
+    order: 2;
   }
   .partner:nth-child(4) {
-    order: 4
+    order: 4;
   }
 }

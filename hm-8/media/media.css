@@ -66,7 +66,7 @@
     margin-bottom: 65px;
   }
   .container {
-    width: 748px;
+    max-width: 748px;
     padding: 0 10px;
     margin: 0 auto;
   }
@@ -123,7 +123,7 @@
     background-image: url(../img/header-bg@desktop.jpg);
   }
   .container {
-    width: 940px;
+    max-width: 940px;
   }
   .container--main {
     max-width: 940px;

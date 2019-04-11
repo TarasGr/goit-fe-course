@@ -23,34 +23,36 @@ img {
   --trans: all 0.4s;
 }
 .container-fluid {
-  height: 540px; /* только для ширины 320px */
+  height: 540px;
   background-color: #1a1915;
   margin-bottom: 65px;
 }
-.logo-link {
-  font-size: 20px;
-  letter-spacing: 1px;
-  color: var(--white);
-  font-family: var(--font-m);
-  font-weight: bold;
-  /* text-align: center;
-    text-decoration: none; */
+.containre {
+  min-width: 320px;
+  max-width: 940px;
+  margin: 0 auto;
 }
-.site-navigation {
+.container--header {
+  padding-top: 20px;
+}
+ul {
   list-style: none;
-  /* display: flex;
-    justify-content: center;
-    align-items: center; */
+  margin-bottom: 0;
+}
+a {
+  text-decoration: none !important;
+  color: var(--white) !important;
+}
+
+.navigation {
+  margin-bottom: 112px;
 }
 .site-navigation-item {
-  text-align: center;
   width: 90px;
   height: 36px;
-  /* padding-top: 6px; */
   border-radius: var(--radius);
   background-color: rgba(26, 25, 21, 0);
   border: 2px solid transparent;
-  /* cursor: pointer; */
 }
 .site-navigation-link {
   font-size: 14px;
@@ -63,14 +65,26 @@ img {
   border: 2px solid var(--white);
   transition: var(--trans);
 }
+
+.logo-wrp {
+  margin-bottom: 14px;
+}
+.logo-link {
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: var(--white);
+  font-family: var(--font-m);
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+
 .title-share {
   font-size: 30px;
   color: var(--white);
   font-family: var(--font-m);
   font-weight: bold;
-  text-align: center;
   text-transform: uppercase;
-  /* margin-bottom: 6px; */
 }
 .subtitle-share {
   font-size: 18px;
@@ -78,17 +92,15 @@ img {
   font-family: var(--font-r);
   font-weight: 300;
   text-align: center;
-  /* margin-bottom: 14px; */
+  margin-bottom: 14px;
 }
 
 .button {
-  margin: 0 20px;
   border: none;
   border-radius: var(--radius-btn);
   font-size: 14px;
   font-family: var(--font-m);
   font-weight: bold;
-  text-align: center;
   cursor: pointer;
 }
 .button--red {
@@ -129,18 +141,12 @@ img {
   text-decoration: none;
   text-align: center;
 }
+
 .picture-wrp {
   position: relative;
   margin: 0 auto;
   width: 120px;
-
-
-
   margin-bottom: 15px;
-
-
-
-  
 }
 .img-wrp {
   --s: 120px;
@@ -183,6 +189,6 @@ img {
   font-family: var(--font-r);
   font-weight: 300;
 }
-.btn-wrp {
-    text-align: center;
+.container--main {
+  margin-bottom: 60px;
 }

@@ -1,0 +1,194 @@
+
+@media (max-width: 767px) {
+  /* Header */
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .header {
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(251, 227, 137, 0.9   )), to(rgba(243, 138, 129, 0.9))), url(../img/background.png);
+    background: -webkit-linear-gradient(bottom, rgba(251, 227, 137, 0.9   ) 0%, rgba(243, 138, 129, 0.9) 100%), url(../img/background.png);
+    background: -o-linear-gradient(bottom, rgba(251, 227, 137, 0.9   ) 0%, rgba(243, 138, 129, 0.9) 100%), url(../img/background.png);
+    background: linear-gradient(0deg, rgba(251, 227, 137, 0.9   ) 0%, rgba(243, 138, 129, 0.9) 100%), url(../img/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 30px;
+    padding-bottom: 100px;
+  }
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .blogo {
+    margin-bottom: 30px;
+  }
+  .site-nav {
+    width: 100%;
+    list-style: none;
+    font-size: 21px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 30px;
+  }
+  .site-nav__item {
+    margin-bottom: 20px;
+  }
+  /* Welcome */
+  .welcome__subtitle {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .welcome__title {
+    font-size: 50px;
+    padding: 0;
+    margin-bottom: 70px;
+    line-height: 50px;
+  }
+  /* MAIN */
+  .main {
+    overflow: hidden;
+  }
+  .services {
+    margin-bottom: 50px;
+  }
+  .services__title {
+    margin-bottom: 70px;
+  }
+  /* FOOTER */
+  .form {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .copyright {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  input[type="email"] {
+    width: 55%;
+  }
+
+  input[type="submit"] {
+    width: 41%;
+  }
+}
+@media (min-width: 768px) {
+  .header {
+    padding: 24px 6px 228px;
+  }
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    padding-top: 30px;
+    margin-bottom: 150px;
+  }
+  .blogo {
+    min-width: 80px;
+  }
+  .site-nav {
+    width: 610px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  /* Welcome */
+  .welcome__subtitle {
+    margin: 0 0 60px;
+  }
+  .welcome__title {
+    padding: 0 180px;
+    margin: 0 0 136px;
+  }
+  .service {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 246px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 0;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+  }
+  .service__item {
+    width: 290px;
+    margin: 0;
+    padding-left: 70px;
+    position: relative;
+  }
+  .team__title::after,
+  .services__title::after {
+    content: "";
+    display: block;
+    margin: 40px auto;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+  }
+  .team__description {
+    width: 1000px;
+  }
+  .team__item {
+    width: 380px;
+  }
+  .team__members {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .copyright {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx){
+  .header{
+      background: -webkit-gradient(linear, left bottom, left top, from(rgba(251, 227, 137, 0.9   )), to(rgba(243, 138, 129, 0.9))), url(../img/background@2x.png);
+      background: -webkit-linear-gradient(bottom, rgba(251, 227, 137, 0.9   ) 0%, rgba(243, 138, 129, 0.9) 100%), url(../img/background@2x.png);
+      background: -o-linear-gradient(bottom, rgba(251, 227, 137, 0.9   ) 0%, rgba(243, 138, 129, 0.9) 100%), url(../img/background@2x.png);
+      background: linear-gradient(0deg, rgba(251, 227, 137, 0.9   ) 0%, rgba(243, 138, 129, 0.9) 100%), url(../img/background@2x.png);
+  }
+}

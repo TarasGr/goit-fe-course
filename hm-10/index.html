@@ -6,282 +6,379 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Cross-browser compatibility & Retina</title>
     <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/fonts.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
-    <div class="container__fluid">
-      <header class="container">
-        <div class="logo-wrp col-1">
-          <a href="#" class="logo-link">
-            <img src="./img/logo.png" alt="logo" class="logo" />
+    <header class="header">
+      <nav class="nav container">
+        <div class="blogo">
+          <a href="#" class="blogo__link">
+            <img
+              srcset="./img/logo.png 86w, ./img/logo@2x.png 172w"
+              sizes="86px"
+              src="./img/logo.png"
+              alt="logo"
+              class="blogo__logo"
+              heigh="23"
+            />
           </a>
         </div>
-        <nav class="col-7">
-          <ul class="site-navigation">
-            <li class="site-navigation-item">
-              <a href="#" class="site-navigation-link">about</a>
-            </li>
-            <li class="site-navigation-item">
-              <a href="#" class="site-navigation-link">service</a>
-            </li>
-            <li class="site-navigation-item">
-              <a href="#" class="site-navigation-link">work</a>
-            </li>
-            <li class="site-navigation-item">
-              <a href="#" class="site-navigation-link">blog</a>
-            </li>
-            <li class="site-navigation-item">
-              <a href="#" class="site-navigation-link">contact</a>
-            </li>
-            <li class="site-navigation-item">
-              <a href="#" class="site-navigation-link">
-                  <img src="./img/SHOPPING CART.png" alt="" class="navigation__icon">
-              </a>
-            </li>
-            <li class="site-navigation-item">
-              <a href="#" class="site-navigation-link">
-                  <img src="./img/MAGNIFYING GLASS.png" alt="" class="navigation__img">
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-    </div>
-    <main class="container">
-      <section>
-        <h3 class="subtitle">We work with</h3>
-        <h2 class="title">amazing service</h2>
-        <div class="services">
-          <div class="service col-4">
-            <div class="icon_wrp">
+        <ul class="site-nav">
+          <li class="site-nav__item">
+            <a href="#" class="site-nav__link">about</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="#" class="site-nav__link">service</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="#" class="site-nav__link">work</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="#" class="site-nav__link">blog</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="#" class="site-nav__link">contact</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="#" class="site-nav__link">
               <img
-                src="./img/icons/alarm.png"
+                srcset="
+                  ./img/SHOPPING_CART.png    18w,
+                  ./img/SHOPPING_CART@2x.png 35w
+                "
+                sizes="18px"
+                src="./img/SHOPPING_CART.png"
+                alt="shoping cart"
+                class="site_nav__icon"
+              />
+            </a>
+          </li>
+          <li class="site-nav__item">
+            <a href="#" class="site-nav__link">
+              <img
+                srcset="
+                  ./img/MAGNIFYING_GLASS.png    18w,
+                  ./img/MAGNIFYING_GLASS@2x.png 35w
+                "
+                sizes="18px"
+                src="./img/MAGNIFYING_GLASS.png"
+                alt="magnifying glass"
+                class="site_nav__icon"
+              />
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="welcome container">
+        <h2 class="subtitle welcome__subtitle">Creative template</h2>
+        <h1 class="title welcome__title">Welcome to MoGo</h1>
+        <button class="button welcome__button">Learn more</button>
+      </div>
+    </header>
+    <main class="main">
+      <section class="services container">
+        <h3 class="subtitle services__subtitle">We work with</h3>
+        <h2 class="title services__title">amazing services</h2>
+        <div class="service">
+          <div class="service__item">
+            <div class="service__img-wrp">
+              <img
+                srcset="
+                  ./img/icons-services/ALARM.png 32w,
+                  ./img/icons-services/ALARM@2x.png 64w
+                "
+                sizes="64px"
+                src="./img/icons-services/ALARM.png"
                 alt="alarm"
-                class="service-img"
+                class="service__icon"
               />
             </div>
-            <div class="service-text">
-              <h4 class="service-title">photography</h4>
-              <p class="service-decription">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Quaerat sint eaque temporibus?
+            <div class="service__text">
+              <h4 class="service__title">
+                photography
+              </h4>
+              <p class="text service__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor.
               </p>
             </div>
           </div>
-          <div class="service col-4">
-            <div class="icon_wrp">
+          <div class="service__item">
+            <div class="service__img-wrp">
               <img
-                src="./img/icons/line-graph.png"
-                alt="line_graph"
-                class="service-img"
+                srcset="
+                ./img/icons-services/LINE GRAPH.png 32w,
+                ./img/icons-services/LINE GRAPH@2x.png 64w
+                "
+                sizes="64px"
+                src="./img/icons-services/LINE GRAPH.png"
+                alt="line-graph"
+                class="service__icon"
               />
             </div>
-            <div class="service-text">
-              <h4 class="service-title">web design</h4>
-              <p class="service-decription">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Quaerat sint eaque temporibus?
+            <div class="service__text">
+              <h4 class="service__title">
+                web design
+              </h4>
+              <p class="text service__description">
+                Ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor.
               </p>
             </div>
           </div>
-          <div class="service col-4">
-            <div class="icon_wrp">
+          <div class="service__item">
+            <div class="service__img-wrp">
               <img
-                src="./img/icons/computer.png"
+                srcset="
+                  ./img/icons-services/COMPUTER_OK.png 32w,
+                  ./img/icons-services/COMPUTER_OK@2x.png 64w
+                "
+                sizes="64px"
+                src="./img/icons-services/COMPUTER_OK.png"
                 alt="computer"
-                class="service-img"
+                class="service__icon"
               />
             </div>
-            <div class="service-text">
-              <h4 class="service-title">creativity</h4>
-              <p class="service-decription">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Quaerat sint eaque temporibus?
+            <div class="service__text">
+              <h4 class="service__title">
+                creativity
+              </h4>
+              <p class="text service__description">
+                Dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor.
               </p>
             </div>
           </div>
-          <div class="service col-4">
-            <div class="icon_wrp">
-              <img src="./img/icons/book.png" alt="book" class="service-img" />
-            </div>
-            <div class="service-text">
-              <h4 class="service-title">seo</h4>
-              <p class="service-decription">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Quaerat sint eaque temporibus?
-              </p>
-            </div>
-          </div>
-          <div class="service col-4">
-            <div class="icon_wrp">
-              <img src="./img/icons/home.png" alt="home" class="service-img" />
-            </div>
-            <div class="service-text">
-              <h4 class="service-title">css/html</h4>
-              <p class="service-decription">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Quaerat sint eaque temporibus?
-              </p>
-            </div>
-          </div>
-          <div class="service col-4">
-            <div class="icon_wrp">
+          <div class="service__item">
+            <div class="service__img-wrp">
               <img
-                src="./img/icons/image.png"
-                alt="image"
-                class="service-img"
+                srcset="
+                  ./img/icons-services/BOOK.png 32w,
+                  ./img/icons-services/BOOK@2x.png 64w
+                "
+                sizes="64px"
+                src="./img/icons-services/BOOK.png"
+                alt="book"
+                class="service__icon"
               />
             </div>
-            <div class="service-text">
-              <h4 class="service-title">digital</h4>
-              <p class="service-decription">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Quaerat sint eaque temporibus?
+            <div class="service__text">
+              <h4 class="service__title">
+                seo
+              </h4>
+              <p class="text service__description">
+                Ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod.
+              </p>
+            </div>
+          </div>
+          <div class="service__item">
+            <div class="service__img-wrp">
+              <img
+                srcset="
+                  ./img/icons-services/HOME.png 32w,
+                  ./img/icons-services/HOME@2x.png 64w
+                "
+                sizes="64px"
+                src="./img/icons-services/HOME.png"
+                alt="home"
+                class="service__icon"
+              />
+            </div>
+            <div class="service__text">
+              <h4 class="service__title">
+                css/html
+              </h4>
+              <p class="text service__description">
+                Lorem dolor sit amet, consectetur adipiscing elit, sed do
+                tempor.
+              </p>
+            </div>
+          </div>
+          <div class="service__item">
+            <div class="service__img-wrp">
+              <img
+                srcset="
+                  ./img/icons-services/IMAGE.png 32w,
+                  ./img/icons-services/IMAGE@2x.png 64w
+                "
+                sizes="64px"
+                src="./img/icons-services/IMAGE.png"
+                alt="image"
+                class="service__icon"
+              />
+            </div>
+            <div class="service__text">
+              <h4 class="service__title">
+                digital
+              </h4>
+              <p class="text service__description">
+                Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
               </p>
             </div>
           </div>
         </div>
       </section>
-      <section class="team">
-        <h3 class="subtitle">Who we are</h3>
-        <h2 class="title">meet our team</h2>
-        <p class="description">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-          dolorum, ea excepturi sit accusamus cupiditate! Magni necessitatibus
-          suscipit, soluta placeat nam error ducimus autem, nesciunt dolore
-          nulla ea. Sit perspiciatis, molestiae amet unde sint odit voluptatem
-          magni.
+      <section class="team container">
+        <h3 class="subtitle team__subtitle">Who we are</h3>
+        <h2 class="title team__title">meet our team</h2>
+        <p class="text team__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt labore et dolore magna aliqua. Ut en m ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
         </p>
-        <div class="team-wrp">
-          <div class="cart">
-            <div class="img-wrp">
-              <img class="cart-img" src="./img/img-1.jpg" alt="mathew dix" />
-              <div class="links">
-                <a href="#" class="social-link">
-                  <img
-                    src="./img/icons/facebook.png"
-                    alt="facebook"
-                    class="link-icon"
-                  />
-                </a>
-                <a href="#" class="social-link">
-                  <img
-                    src="./img/icons/twitter.png"
-                    alt="twitter"
-                    class="link-icon"
-                  />
-                </a>
-                <a href="#" class="social-link">
-                  <img
-                    src="./img/icons/pinterest.png"
-                    alt="pinterest"
-                    class="link-icon"
-                  />
-                </a>
-                <a href="#" class="social-link">
-                  <img
-                    src="./img/icons/instagram.png"
-                    alt="instagram"
-                    class="link-icon"
-                  />
-                </a>
-              </div>
-            </div>
-            <h5 class="cart-name">Matthew Dix</h5>
-            <h5 class="cart-position">Graphic Design</h5>
-          </div>
-          <div class="cart">
-            <div class="img-wrp">
-              <img class="cart-img" src="./img/img-2.jpg" alt="mathew dix" />
-              <div class="links">
-                <a href="#" class="social-link">
-                  <img
-                    src="./img/icons/facebook.png"
-                    alt="facebook"
-                    class="link-icon"
-                  />
-                </a>
-                <a href="#" class="social-link">
-                  <img
-                    src="./img/icons/twitter.png"
-                    alt="twitter"
-                    class="link-icon"
-                  />
-                </a>
-                <a href="#" class="social-link">
-                  <img
-                    src="./img/icons/pinterest.png"
-                    alt="pinterest"
-                    class="link-icon"
-                  />
-                </a>
-                <a href="#" class="social-link">
-                  <img
-                    src="./img/icons/instagram.png"
-                    alt="instagram"
-                    class="link-icon"
-                  />
-                </a>
-              </div>
-            </div>
-            <h5 class="cart-name">Christofer Campbel</h5>
-            <h5 class="cart-position">Branding/UX design</h5>
-          </div>
-          <div class="cart">
-            <div class="img-wrp">
+        <div class="team__members">
+          <div class="team__item">
+            <div class="member__img-wrp">
               <img
-                class="cart-img"
-                src="./img/img-3.jpg"
-                alt="Michael Fertig"
+                class="member__img"
+                srcset="./img/team-1.jpg 380w, ./img/team-1@2x.jpg 760w"
+                sizes="380px"
+                src="./img/team-1.jpg"
+                alt="mathew dix"
               />
-              <div class="links">
-                <a href="#" class="social-link">
-                  <img
-                    src="./img/icons/facebook.png"
-                    alt="facebook"
-                    class="link-icon"
-                  />
+              <div class="social">
+                <a href="#" class="social__link">
+                  <svg class="social__svg">
+                    <use
+                      href="./img/icons-social/sprite.svg#icon-facebook"
+                    ></use>
+                  </svg>
                 </a>
-                <a href="#" class="social-link">
-                  <img
-                    src="./img/icons/twitter.png"
-                    alt="twitter"
-                    class="link-icon"
-                  />
+                <a href="#" class="social__link">
+                  <svg class="social__svg">
+                    <use
+                      href="./img/icons-social/sprite.svg#icon-twitter"
+                    ></use>
+                  </svg>
                 </a>
-                <a href="#" class="social-link">
-                  <img
-                    src="./img/icons/pinterest.png"
-                    alt="pinterest"
-                    class="link-icon"
-                  />
+                <a href="#" class="social__link">
+                  <svg class="social__svg">
+                    <use
+                      href="./img/icons-social/sprite.svg#icon-pinterest"
+                    ></use>
+                  </svg>
                 </a>
-                <a href="#" class="social-link">
-                  <img
-                    src="./img/icons/instagram.png"
-                    alt="instagram"
-                    class="link-icon"
-                  />
+                <a href="#" class="social__link">
+                  <svg class="social__svg">
+                    <use
+                      href="./img/icons-social/sprite.svg#icon-instagram"
+                    ></use>
+                  </svg>
                 </a>
               </div>
             </div>
-            <h5 class="cart-name">Michael Fertig</h5>
-            <h5 class="cart-position">Developer</h5>
+            <h5 class="member__name">Matthew Dix</h5>
+            <h5 class="member__occupation">Graphic Design</h5>
+          </div>
+          <div class="team__item">
+            <div class="member__img-wrp">
+              <img
+                srcset="./img/team-2.jpg 380w, ./img/team-2@2x.jpg 760w"
+                sizes="380px"
+                class="member__img"
+                src="./img/team-2.jpg"
+                alt="christopher campbell"
+              />
+              <div class="social">
+                <a href="#" class="social__link">
+                  <svg class="social__svg">
+                    <use
+                      href="./img/icons-social/sprite.svg#icon-facebook"
+                    ></use>
+                  </svg>
+                </a>
+                <a href="#" class="social__link">
+                  <svg class="social__svg">
+                    <use
+                      href="./img/icons-social/sprite.svg#icon-twitter"
+                    ></use>
+                  </svg>
+                </a>
+                <a href="#" class="social__link">
+                  <svg class="social__svg">
+                    <use
+                      href="./img/icons-social/sprite.svg#icon-pinterest"
+                    ></use>
+                  </svg>
+                </a>
+                <a href="#" class="social__link">
+                  <svg class="social__svg">
+                    <use
+                      href="./img/icons-social/sprite.svg#icon-instagram"
+                    ></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <h5 class="member__name">Christopher Campbell</h5>
+            <h5 class="member__occupation">Branding/UX design</h5>
+          </div>
+          <div class="team__item">
+            <div class="member__img-wrp">
+              <img
+                srcset="./img/team-3.jpg 380w, ./img/team-3@2x.jpg 760w"
+                sizes="380px"
+                class="member__img"
+                src="./img/team-3.jpg"
+                alt="michael fertig"
+              />
+              <div class="social">
+                <a href="#" class="social__link">
+                  <svg class="social__svg">
+                    <use
+                      href="./img/icons-social/sprite.svg#icon-facebook"
+                    ></use>
+                  </svg>
+                </a>
+                <a href="#" class="social__link">
+                  <svg class="social__svg">
+                    <use
+                      href="./img/icons-social/sprite.svg#icon-twitter"
+                    ></use>
+                  </svg>
+                </a>
+                <a href="#" class="social__link">
+                  <svg class="social__svg">
+                    <use
+                      href="./img/icons-social/sprite.svg#icon-pinterest"
+                    ></use>
+                  </svg>
+                </a>
+                <a href="#" class="social__link">
+                  <svg class="social__svg">
+                    <use
+                      href="./img/icons-social/sprite.svg#icon-instagram"
+                    ></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <h5 class="member__name">Michael Fertig</h5>
+            <h5 class="member__occupation">Developer</h5>
           </div>
         </div>
       </section>
     </main>
-    <footer class="container">
-      <div class="copyright-wrp">
-        <p>
+    <footer class="footer">
+      <div class="copyright container">
+        <p class="copyright__text">
           &copy 2016 MoGo free PSD template by
-          <span class="rights-color">Laaqiq</span>
+          <span class="copyright__text copyright__rights-color">Laaqiq</span>
         </p>
+        <form class="form">
+          <input
+            class="form__email"
+            type="email"
+            name="email"
+            placeholder="Your Email..."
+          />
+          <input class="form__submit" type="submit" value="subscribe" />
+        </form>
       </div>
-      <form>
-        <input type="email" name="email" placeholder="Your Email..." />
-        <input type="submit" value="subscribe" />
-      </form>
     </footer>
   </body>
 </html>

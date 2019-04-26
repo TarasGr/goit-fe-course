@@ -1,0 +1,26 @@
+/*
+   Import partials below
+*/
+@import './helpers/variables';
+@import './helpers/mixin';
+@import './normalize';
+@import './fonts';
+@import './base';
+
+/*  Components  */
+@import './components/header';
+@import './components/nav';
+@import './components/blogo';
+@import './components/site-nav';
+@import './components/welcome';
+@import './components/main';
+@import './components/subtitle';
+@import './components/title';
+@import './components/services';
+@import './components/service';
+@import './components/member';
+@import './components/social';
+@import './components/team';
+@import './components/footer';
+@import './components/copyright';
+@import './components/form';

@@ -1,0 +1,46 @@
+.social {
+  @include sizes(380px, 470px);
+  @include center-flex(all);
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ed8889),
+    to(#eed787)
+  );
+  background: -webkit-linear-gradient(#ed8889, #eed787);
+  background: -o-linear-gradient(#ed8889, #eed787);
+  background: linear-gradient(#ed8889, #eed787);
+  opacity: 0;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
+  z-index: 10;
+  &__link {
+    @include sizes(57px, 57px);
+    @include center-flex(all);
+    background: $bg-link;
+    margin: 0.5px;
+
+    &:hover {
+      background-color: $primery-bg-color;
+    }
+    &:hover .social__svg {
+      fill: $white-color;
+    }
+  }
+  &__svg {
+    @include sizes(32px, 32px);
+    fill: $fill-color;
+    -webkit-transition: fill 0.2s linear;
+    -o-transition: fill 0.2s linear;
+    transition: fill 0.2s linear;
+  }
+}

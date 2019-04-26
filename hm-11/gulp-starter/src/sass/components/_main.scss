@@ -1,0 +1,9 @@
+.main {
+  padding: 48px 6px 80px;
+
+  @media (max-width: 767px) {
+    .main {
+      overflow: hidden;
+    }
+  }
+}

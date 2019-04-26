@@ -1,0 +1,45 @@
+.team {
+  &__members {
+    margin-bottom: 80px;
+  }
+  &__description {
+    margin: 0 auto;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: #999;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 86px;
+  }
+  &__item {
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+  }
+
+  &__item:hover .member__img {
+    bottom: 10px;
+    right: 10px;
+  }
+  &__item:hover .social {
+    opacity: 0.9;
+    top: -10px;
+    left: -10px;
+  }
+  @media (min-width: 768px) {
+    &__description {
+      width: 1000px;
+    }
+    &__item {
+      width: 380px;
+    }
+    &__members {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.welcome {
+  &__subtitle {
+    font-size: 72px;
+    color: #fff;
+    font-family: 'Kaushan Script', sans-serif;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  &__title {
+    @include font-settings(150px, 140px);
+    color: $white-color;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__button {
+    display: block;
+    width: 160px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: $white-color;
+    padding: 10px 28px;
+    margin: 0 auto;
+    border: 3px $white-color solid;
+    background: inherit;
+    cursor: pointer;
+  }
+
+  @media (max-width: 767px) {
+    &__subtitle {
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+    &__title {
+      font-size: 50px;
+      padding: 0;
+      margin-bottom: 70px;
+      line-height: 50px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    &__subtitle {
+      margin: 0 0 60px;
+    }
+    &__title {
+      padding: 0 180px;
+      margin: 0 0 136px;
+    }
+  }
+}
